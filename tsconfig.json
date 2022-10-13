@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "strict": false,                    /* TODO: Activate and Fix Errors. */
+    "baseUrl": "./",
+    "experimentalDecorators": true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
+    "emitDecoratorMetadata": true,                    /* Emit design-type metadata for decorated declarations in source files. */
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "types": ["node", "./node_modules/@types/jest"],   
+    "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}
